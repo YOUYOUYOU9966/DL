@@ -1,110 +1,62 @@
-# Project Name: Fasion Recommendation System for Ecommerce
+## Fashion Recommendation System
 
-A Deep learning based streamlit web app which can recommened you various types of fasion products with respect to your choices.
+## Overview
 
-Recommender systems are the systems that are designed to recommend things to the user based on many different factors. These systems predict the most likely product that the users are most likely to purchase and are of interest to. Companies like Netflix, Amazon, etc. use recommender systems to help their users to identify the correct product or movies for them. 
-
-The recommender system deals with a large volume of information present by filtering the most important information based on the data provided by a user and other factors that take care of the user’s preference and interest. It finds out the match between user and item and imputes the similarities between users and items for recommendation. 
-
-Both the users and the services provided have benefited from these kinds of systems. The quality and decision-making process has also improved through these kinds of systems.
+The application of a deep learning-based fashion recommendation system may be found in this repository. For thorough fashion product recommendations, the system makes use of Python, TensorFlow, Keras, Convolutional Neural Networks (CNNs), ResNet-50 architecture, and web scraping.
 
 
+## Introduction
 
-## Original repo:
-
- - [Project Repo link](https://github.com/entbappy/Deep-Learning-Based-Fasion-Recommendation-System)
-
-
-## Demo Video:
-
- - [Demo video link](https://www.youtube.com/watch?v=DtDx8KgvJ8U)
+Based on image input, the fashion recommendation system seeks to offer customized outfit recommendations. It analyzes an extensive dataset of more than 45,000 fashion photos using deep learning techniques, such as the K-Nearest Neighbors algorithm and the ResNet-50 architecture. The method generates the top 5 closest matches to user-supplied photos by combining similarity search with transfer learning for effective feature extraction.
 
 
-This is a methods of identifying similar products check various aspects on pictures, including: shape, colors, edges, features (including the lighting of the photo) and euclidean distance of vectors in a 'n' dim features space.
 
 # Dataset has been used:
 
  - [High Resolution Dataset link](https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset)
  - [Low Resolution Dataset link](https://www.kaggle.com/paramaggarwal/fashion-product-images-small)
 
+## Methodology
+
+The approach combines Annoy for K-Nearest Neighbors, transfer learning, and ResNet-50 architecture. Customized fashion recommendations are made possible by the system's ability to extract information from a large dataset. The study places a strong emphasis on CNNs, transfer learning, and similarity search's versatility and efficacy.
+
+## Web Scraping
+
+Databases for the recommendation system are created by webpage scraping. The main focus is on pictures of models with clothes that were taken by web scraping methods from several sources.
+
+## Recommendation Engine
+
+Sklearn Nearest Neighbors is used in the implementation of the recommendation engine. To offer individualized outfit recommendations, it collects user data, examines past activity, and filters the information. Items that are comparable to the user's tastes are recommended using content-based filtering.
+
+## Image Pre-processing
+
+One important phase is picture pre-processing, which involves flattening, segmenting, and resizing user-provided photos. This guarantees compatibility with the model that was trained using a 224 × 224 standard input scale.
+
+## Convolutional Neural Networks (CNNs)
+CNNs—the ResNet-50 architecture in particular—are used to handle visual input. Neural networks are trained by transfer learning, and further layers are added to the model to make it as efficient as possible under the conditions.
+
+## Related Work
+
+The system incorporates findings from previous research on fashion suggestion systems, referencing papers like "Decomposition of Style Features in a Deep Fashion Recommendation System" and "Intelligent Clothes Suggestion System."
+## Result
+
+The web application allows users to upload photographs and receive recommendations for things that have comparable visuals. The overall experience of discovering products is improved by the interface's user-friendly design.
+
+## Conclusion
+
+The system for recommending fashion offers a useful way to make clothing recommendations based only on looks. It is proposed that future study be conducted to increase accuracy and the overall experience of fashion discovery.
+
+## Usage
+
+Refer to the [Usage](#usage) section of the documentation for instructions on how to use the fashion recommendation system
+
+## Contributing
+
+Contributions are always welcome! If you would want to help with the fashion suggestion system's development, kindly refer to our [contribution rules] (CONTRIBUTING.md).
 
 
-# Some Real Time Demo:
-
-Web app look
-
-<img src="demo/2.png" alt="workflow" width="70%">
-
-Lets check some of images
-
-<img src="demo/1.png" alt="workflow" width="70%">
-
-<img src="demo/3.png" alt="workflow" width="70%">
-
-This really performing good you can consider by seeing this result 😀
-
-<img src="demo/4.png" alt="workflow" width="70%">
 
 
-<img src="demo/5.png" alt="workflow" width="70%">
 
-<img src="demo/6.png" alt="workflow" width="70%">
-
-# STEPS to run this project:
-
-You can also use others images
-
-## STEP 01: 
-Clone the repository
-
-```bash
-git clone https://github.com/entbappy/Deep-Learning-Based-Fasion-Recommendation-System.git
-```
-
-## STEP 02: 
-Create an environment
-
-
-```bash
-conda create -n fasion python=3.7 -y
-```
-
-## STEP 03: 
-Install the requirements
-
-
-```bash
-pip install -r requirements.txt
-```
-
-## STEP 04: 
-Download the data from the link and keep it in your project directory. Make sure all the images should be in just one folder called data, like that
-
-<img src="demo/7.png" alt="workflow" width="70%">
-
-## STEP 05: 
-Just execute this command & wait, it may take some time
-
-
-```bash
-python run.py
-```
-
-## STEP 06: 
-Now to start the webapp run the following command
-
-
-```bash
-streamlit run app.py
-```
-
-yes!! Now you can start predicting 🙂
-
-# Authors:
-```bash
-Author: Bappy Ahmed
-Data Scientist
-Email: entbappy73@gmail.com
-```
 
 
