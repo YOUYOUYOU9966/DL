@@ -48,7 +48,7 @@ The system for recommending fashion offers a useful way to make clothing recomme
 
 ## Usage
 
-Refer to the [Usage](#usage) section of the documentation for instructions on how to use the fashion recommendation system
+Refer to the [Usage] section of the documentation for instructions on how to use the fashion recommendation system
 
 ## Contributing
 
